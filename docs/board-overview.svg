@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650">
+<rect width="1000" height="650" fill="#0b1020"/>
+<rect x="110" y="90" width="780" height="470" rx="28" fill="#174d36" stroke="#7dd3fc" stroke-width="4"/>
+<circle cx="160" cy="140" r="18" fill="#0b1020" stroke="#d1d5db" stroke-width="5"/>
+<circle cx="840" cy="140" r="18" fill="#0b1020" stroke="#d1d5db" stroke-width="5"/>
+<circle cx="160" cy="510" r="18" fill="#0b1020" stroke="#d1d5db" stroke-width="5"/>
+<circle cx="840" cy="510" r="18" fill="#0b1020" stroke="#d1d5db" stroke-width="5"/>
+<rect x="190" y="255" width="85" height="85" rx="10" fill="#202938" stroke="#f8fafc" stroke-width="3"/>
+<rect x="725" y="255" width="85" height="85" rx="10" fill="#202938" stroke="#f8fafc" stroke-width="3"/>
+<text x="232" y="300" font-family="monospace" font-size="20" text-anchor="middle" fill="#fff">U1</text>
+<text x="767" y="300" font-family="monospace" font-size="20" text-anchor="middle" fill="#fff">U2</text>
+<text x="232" y="325" font-family="monospace" font-size="15" text-anchor="middle" fill="#a7f3d0">0x76</text>
+<text x="767" y="325" font-family="monospace" font-size="15" text-anchor="middle" fill="#a7f3d0">0x77</text>
+<rect x="405" y="420" width="190" height="55" rx="10" fill="#1f2937" stroke="#f8fafc" stroke-width="3"/>
+<text x="500" y="454" font-family="monospace" font-size="18" text-anchor="middle" fill="#fff">J1 / J2 HOST</text>
+<line x1="275" y1="298" x2="725" y2="298" stroke="#fde68a" stroke-width="6"/>
+<line x1="275" y1="318" x2="725" y2="318" stroke="#93c5fd" stroke-width="6"/>
+<line x1="500" y1="318" x2="500" y2="420" stroke="#93c5fd" stroke-width="6"/>
+<line x1="520" y1="298" x2="520" y2="420" stroke="#fde68a" stroke-width="6"/>
+<text x="500" y="65" font-family="sans-serif" font-size="38" font-weight="700" text-anchor="middle" fill="#f8fafc">EnviroBridge</text>
+<text x="500" y="605" font-family="monospace" font-size="18" text-anchor="middle" fill="#94a3b8">dual BME280 • I²C • configurable pull-ups • test points • 2-layer PCB</text>
+<text x="132" y="300" transform="rotate(-90 132 300)" font-family="monospace" font-size="18" fill="#67e8f9">AIRFLOW</text>
+<text x="868" y="300" transform="rotate(90 868 300)" font-family="monospace" font-size="18" fill="#67e8f9">AIRFLOW</text>
+</svg>
