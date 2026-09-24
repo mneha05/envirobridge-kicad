@@ -1,0 +1,499 @@
+(kicad_pcb (version 20240108) (generator pcbnew)
+  (general (thickness 1.6))
+  (paper "A4")
+  (layers
+    (0 "F.Cu" signal)
+    (31 "B.Cu" signal)
+    (36 "B.SilkS" user "b.silkscreen")
+    (37 "F.SilkS" user "f.silkscreen")
+    (44 "Edge.Cuts" user)
+  )
+  (setup (pad_to_mask_clearance 0))
+  (net 0 "")
+  (net 1 "GND")
+  (net 2 "3V3")
+  (net 3 "SDA")
+  (net 4 "SCL")
+  (net 5 "U1_SDO")
+  (net 6 "U2_SDO")
+  (net 7 "SDA_PU")
+  (net 8 "SCL_PU")
+  (gr_rect (start 20 20) (end 54 46) (stroke (width 0.25) (type default)) (fill none) (layer "Edge.Cuts"))
+  (gr_text "EnviroBridge v1.0" (at 37 22) (layer "F.SilkS") (effects (font (size 1.2 1.2) (thickness 0.2))))
+  (gr_text "U1 0x76" (at 25.5 28.7) (layer "F.SilkS") (effects (font (size 0.9 0.9) (thickness 0.15))))
+  (gr_text "U2 0x77" (at 48.5 28.7) (layer "F.SilkS") (effects (font (size 0.9 0.9) (thickness 0.15))))
+  (gr_text "GND 3V3 SDA SCL" (at 37 44.2) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.13))))
+  (gr_text "AIR" (at 22 32 90) (layer "F.SilkS") (effects (font (size 0.7 0.7) (thickness 0.12))))
+  (gr_text "AIR" (at 52 32 90) (layer "F.SilkS") (effects (font (size 0.7 0.7) (thickness 0.12))))
+  (footprint "EnviroBridge:BME280_LGA8" (layer "F.Cu") (at 25 31)
+    (property "Reference" "U1" (at 0 -2.6 0) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.13))))
+    (property "Value" "BME280" (at 0 2.6 0) (layer "F.Fab") hide (effects (font (size 0.8 0.8) (thickness 0.12))))
+    (fp_rect (start -1.5 -1.5) (end 1.5 1.5) (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (fp_circle (center -1.1 -1.1) (end -0.9 -1.1) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd roundrect (at -0.975 -0.975) (size 0.55 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 1 "GND"))
+    (pad "2" smd roundrect (at -0.975 -0.325) (size 0.55 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 2 "3V3"))
+    (pad "3" smd roundrect (at -0.975 0.325) (size 0.55 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 3 "SDA"))
+    (pad "4" smd roundrect (at -0.975 0.975) (size 0.55 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 4 "SCL"))
+    (pad "5" smd roundrect (at 0.975 0.975) (size 0.55 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 1 "GND"))
+    (pad "6" smd roundrect (at 0.975 0.325) (size 0.55 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 2 "3V3"))
+    (pad "7" smd roundrect (at 0.975 -0.325) (size 0.55 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 5 "U1_SDO"))
+    (pad "8" smd roundrect (at 0.975 -0.975) (size 0.55 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 2 "3V3"))
+  )
+  (footprint "EnviroBridge:BME280_LGA8" (layer "F.Cu") (at 49 31)
+    (property "Reference" "U2" (at 0 -2.6 0) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.13))))
+    (property "Value" "BME280" (at 0 2.6 0) (layer "F.Fab") hide (effects (font (size 0.8 0.8) (thickness 0.12))))
+    (fp_rect (start -1.5 -1.5) (end 1.5 1.5) (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (fp_circle (center -1.1 -1.1) (end -0.9 -1.1) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd roundrect (at -0.975 -0.975) (size 0.55 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 1 "GND"))
+    (pad "2" smd roundrect (at -0.975 -0.325) (size 0.55 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 2 "3V3"))
+    (pad "3" smd roundrect (at -0.975 0.325) (size 0.55 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 3 "SDA"))
+    (pad "4" smd roundrect (at -0.975 0.975) (size 0.55 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 4 "SCL"))
+    (pad "5" smd roundrect (at 0.975 0.975) (size 0.55 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 1 "GND"))
+    (pad "6" smd roundrect (at 0.975 0.325) (size 0.55 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 2 "3V3"))
+    (pad "7" smd roundrect (at 0.975 -0.325) (size 0.55 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 6 "U2_SDO"))
+    (pad "8" smd roundrect (at 0.975 -0.975) (size 0.55 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 2 "3V3"))
+  )
+  (footprint "EnviroBridge:0402" (layer "F.Cu") (at 29 31)
+    (property "Reference" "C1" (at 0 -2.6 0) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.13))))
+    (property "Value" "100n" (at 0 2.6 0) (layer "F.Fab") hide (effects (font (size 0.8 0.8) (thickness 0.12))))
+    (fp_rect (start -1 -0.55) (end 1 0.55) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd roundrect (at -0.65 0) (size 0.7 0.65) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 2 "3V3"))
+    (pad "2" smd roundrect (at 0.65 0) (size 0.7 0.65) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 1 "GND"))
+  )
+  (footprint "EnviroBridge:0402" (layer "F.Cu") (at 45 31)
+    (property "Reference" "C2" (at 0 -2.6 0) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.13))))
+    (property "Value" "100n" (at 0 2.6 0) (layer "F.Fab") hide (effects (font (size 0.8 0.8) (thickness 0.12))))
+    (fp_rect (start -1 -0.55) (end 1 0.55) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd roundrect (at -0.65 0) (size 0.7 0.65) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 2 "3V3"))
+    (pad "2" smd roundrect (at 0.65 0) (size 0.7 0.65) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 1 "GND"))
+  )
+  (footprint "EnviroBridge:0603" (layer "F.Cu") (at 37 41)
+    (property "Reference" "C3" (at 0 -2.6 0) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.13))))
+    (property "Value" "4.7u" (at 0 2.6 0) (layer "F.Fab") hide (effects (font (size 0.8 0.8) (thickness 0.12))))
+    (fp_rect (start -1 -0.55) (end 1 0.55) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd roundrect (at -0.65 0) (size 0.7 0.65) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 2 "3V3"))
+    (pad "2" smd roundrect (at 0.65 0) (size 0.7 0.65) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 1 "GND"))
+  )
+  (footprint "EnviroBridge:0402" (layer "F.Cu") (at 34 27)
+    (property "Reference" "R1" (at 0 -2.6 0) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.13))))
+    (property "Value" "4.7k" (at 0 2.6 0) (layer "F.Fab") hide (effects (font (size 0.8 0.8) (thickness 0.12))))
+    (fp_rect (start -1 -0.55) (end 1 0.55) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd roundrect (at -0.65 0) (size 0.7 0.65) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 2 "3V3"))
+    (pad "2" smd roundrect (at 0.65 0) (size 0.7 0.65) (layers "F.Cu" "F.Mask") (roundrect_rratio 0.2) (net 7 "SDA_PU"))
+  )
+  (footprint "EnviroBridge:0402" (layer "F.Cu") (at 40 27)
+    (property "Reference" "R2" (at 0 -2.6 0) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.13))))
+    (property "Value" "4.7k" (at 0 2.6 0) (layer "F.Fab") hide (effects (font (size 0.8 0.8) (thickness 0.12))))
+    (fp_rect (start -1 -0.55) (end 1 0.55) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd roundrect (at -0.65 0) (size 0.7 0.65) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 2 "3V3"))
+    (pad "2" smd roundrect (at 0.65 0) (size 0.7 0.65) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (net 8 "SCL_PU"))
+  )
+  (footprint "EnviroBridge:SolderJumper_3" (layer "F.Cu") (at 25 37)
+    (property "Reference" "SJ1" (at 0 -2.6 0) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.13))))
+    (property "Value" "ADDR U1" (at 0 2.6 0) (layer "F.Fab") hide (effects (font (size 0.8 0.8) (thickness 0.12))))
+    (fp_line (start -2 -0.8) (end 2 -0.8) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start 2 -0.8) (end 2 0.8) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start 2 0.8) (end -2 0.8) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start -2 0.8) (end -2 -0.8) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1.3 0) (size 1 1.1) (layers "F.Cu" "F.Mask") (net 1 "GND"))
+    (pad "2" smd rect (at 0 0) (size 1 1.1) (layers "F.Cu" "F.Mask") (net 5 "U1_SDO"))
+    (pad "3" smd rect (at 1.3 0) (size 1 1.1) (layers "F.Cu" "F.Mask") (net 2 "3V3"))
+  )
+  (footprint "EnviroBridge:SolderJumper_3" (layer "F.Cu") (at 49 37)
+    (property "Reference" "SJ2" (at 0 -2.6 0) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.13))))
+    (property "Value" "ADDR U2" (at 0 2.6 0) (layer "F.Fab") hide (effects (font (size 0.8 0.8) (thickness 0.12))))
+    (fp_line (start -2 -0.8) (end 2 -0.8) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start 2 -0.8) (end 2 0.8) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start 2 0.8) (end -2 0.8) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start -2 0.8) (end -2 -0.8) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1.3 0) (size 1 1.1) (layers "F.Cu" "F.Mask") (net 1 "GND"))
+    (pad "2" smd rect (at 0 0) (size 1 1.1) (layers "F.Cu" "F.Mask") (net 6 "U2_SDO"))
+    (pad "3" smd rect (at 1.3 0) (size 1 1.1) (layers "F.Cu" "F.Mask") (net 2 "3V3"))
+  )
+  (footprint "EnviroBridge:SolderJumper_2" (layer "F.Cu") (at 34 30)
+    (property "Reference" "SJ3" (at 0 -2.6 0) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.13))))
+    (property "Value" "PU_EN" (at 0 2.6 0) (layer "F.Fab") hide (effects (font (size 0.8 0.8) (thickness 0.12))))
+    (fp_rect (start -1.4 -0.7) (end 1.4 0.7) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -0.7 0) (size 1 1) (layers "F.Cu" "F.Mask") (net 7 "SDA_PU"))
+    (pad "2" smd rect (at 0.7 0) (size 1 1) (layers "F.Cu" "F.Mask") (net 3 "SDA"))
+  )
+  (footprint "EnviroBridge:SolderJumper_2" (layer "F.Cu") (at 40 30)
+    (property "Reference" "SJ4" (at 0 -2.6 0) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.13))))
+    (property "Value" "PU_EN" (at 0 2.6 0) (layer "F.Fab") hide (effects (font (size 0.8 0.8) (thickness 0.12))))
+    (fp_rect (start -1.4LÊH
+[™KÊH
+İ›ÚÙH
+ÚYŒLŠH
+\HY˜][
+JH
+š[›Û™JH
+^Y\ˆ‘‹”Ú[ÔÈŠJBˆ
+YŒHˆÛY™Xİ
+]LÈ
+H
+Ú^™HHJH
+^Y\œÈ‘‹İHˆ‘‹“X\ÚÈŠH
+™]”ĞÓÔHŠJBˆ
+YŒˆˆÛY™Xİ
+]È
+H
+Ú^™HHJH
+^Y\œÈ‘‹İHˆ‘‹“X\ÚÈŠH
+™]”ĞÓŠJBˆ
+Bˆ
+›Ûİš[‘[š\›ĞœšYÙN”[’XY\—Ì^ˆ
+^Y\ˆ‘‹İHŠH
+]Ì‹ŒNHÊBˆ
+›Ü\H”™Y™\™[˜ÙHˆ’ŒHˆ
+]L‹ˆ
+H
+^Y\ˆ‘‹”Ú[ÔÈŠH
+Y™™XİÈ
+›Û
+Ú^™H
+H
+XÚÛ™\ÜÈŒLÊJJJBˆ
+›Ü\H•˜[YHˆ’ÔÕÌ‹Mˆ
+]‹ˆ
+H
+^Y\ˆ‘‹‘˜XˆŠHYH
+Y™™XİÈ
+›Û
+Ú^™H
+H
+XÚÛ™\ÜÈŒLŠJJJBˆ
+YŒHˆWÚÛH™Xİ
+]Œ
+H
+Ú^™HKK
+H
+š[JH
+^Y\œÈŠ‹İHˆŠ‹“X\ÚÈŠH
+™]H‘Ó‘ŠJBˆ
+YŒˆˆWÚÛHÚ\˜ÛH
+]‹M
+H
+Ú^™HKK
+H
+š[JH
+^Y\œÈŠ‹İHˆŠ‹“X\ÚÈŠH
+™]ˆŒÕŒÈŠJBˆ
+YŒÈˆWÚÛHÚ\˜ÛH
+]KŒ
+H
+Ú^™HKK
+H
+š[JH
+^Y\œÈŠ‹İHˆŠ‹“X\ÚÈŠH
+™]È”ÑHŠJBˆ
+YˆWÚÛHÚ\˜ÛH
+]ËŒˆ
+H
+Ú^™HKK
+H
+š[JH
+^Y\œÈŠ‹İHˆŠ‹“X\ÚÈŠH
+™]”ĞÓŠJBˆ
+Bˆ
+›Ûİš[‘[š\›ĞœšYÙN’”ÕÔÒÌ^ˆ
+^Y\ˆ‘‹İHŠH
+]ÍÈÎ
+Bˆ
+›Ü\H”™Y™\™[˜ÙHˆ’Œˆˆ
+]L‹ˆ
+H
+^Y\ˆ‘‹”Ú[ÔÈŠH
+Y™™XİÈ
+›Û
+Ú^™H
+H
+XÚÛ™\ÜÈŒLÊJJJBˆ
+›Ü\H•˜[YHˆ’”ÕTÒMˆ
+]‹ˆ
+H
+^Y\ˆ‘‹‘˜XˆŠHYH
+Y™™XİÈ
+›Û
+Ú^™H
+H
+XÚÛ™\ÜÈŒLŠJJJBˆ
+œÜ™Xİ
+İ\LÈLŠH
+[™ÈŠH
+İ›ÚÙH
+ÚYŒLŠH
+\HY˜][
+JH
+š[›Û™JH
+^Y\ˆ‘‹”Ú[ÔÈŠJBˆ
+YŒHˆÛY›İ[™™Xİ
+]LKHLKŠH
+Ú^™HˆKJH
+^Y\œÈ‘‹İHˆ‘‹”\İHˆ‘‹“X\ÚÈŠH
+›İ[™™XİÜœ˜][ÈŒŠH
+™]H‘Ó‘ŠJBˆ
+YŒˆˆÛY›İ[™™Xİ
+]LHLKŠH
+Ú^™HˆKJH
+^Y\œÈ‘‹İHˆ‘‹”\İHˆ‘‹“X\ÚÈŠH
+›İ[™™XİÜœ˜][ÈŒŠH
+™]ˆŒÕŒÈŠJBˆ
+YŒÈˆÛY›İ[™™Xİ
+]HLKŠH
+Ú^™HˆKJH
+^Y\œÈ‘‹İHˆ‘‹”\İHˆ‘‹“X\ÚÈŠH
+›İ[™™XİÜœ˜][ÈŒŠH
+™]È”ÑHŠJBˆ
+YˆÛY›İ[™™Xİ
+]KHLKŠH
+Ú^™HˆKJH
+^Y\œÈ‘‹İHˆ‘‹”\İHˆ‘‹“X\ÚÈŠH
+›İ[™™XİÜœ˜][ÈŒŠH
+™]”ĞÓŠJBˆ
+Y“THˆÛY™Xİ
+]LÈ
+H
+Ú^™HKŒˆK
+H
+^Y\œÈ‘‹İHˆ‘‹”\İHˆ‘‹“X\ÚÈŠJBˆ
+Y“TˆˆÛY™Xİ
+]È
+H
+Ú^™HKŒˆK
+H
+^Y\œÈ‘‹İHˆ‘‹”\İHˆ‘‹“X\ÚÈŠJBˆ
+Bˆ
+›Ûİš[‘[š\›ĞœšYÙN•\İÚ[ˆ
+^Y\ˆ‘‹İHŠH
+]ÌHŒŠBˆ
+›Ü\H”™Y™\™[˜ÙHˆ•Hˆ
+]L‹ˆ
+H
+^Y\ˆ‘‹”Ú[ÔÈŠH
+Y™™XİÈ
+›Û
+Ú^™H
+H
+XÚÛ™\ÜÈŒLÊJJJBˆ
+›Ü\H•˜[YHˆŒÕŒÈˆ
+]‹ˆ
+H
+^Y\ˆ‘‹‘˜XˆŠHYH
+Y™™XİÈ
+›Û
+Ú^™H
+H
+XÚÛ™\ÜÈŒLŠJJJBˆ
+YŒHˆÛYÚ\˜ÛH
+]
+H
+Ú^™HKK
+H
+^Y\œÈ‘‹İHˆ‘‹“X\ÚÈŠH
+™]ˆŒÕŒÈŠJBˆ
+Bˆ
+›Ûİš[‘[š\›ĞœšYÙN•\İÚ[ˆ
+^Y\ˆ‘‹İHŠH
+]ÍHŒŠBˆ
+›Ü\H”™Y™\™[˜ÙHˆ•ˆˆ
+]L‹ˆ
+H
+^Y\ˆ‘‹”Ú[ÔÈŠH
+Y™™XİÈ
+›Û
+Ú^™H
+H
+XÚÛ™\ÜÈŒLÊJJJBˆ
+›Ü\H•˜[YHˆ‘Ó‘ˆ
+]‹ˆ
+H
+^Y\ˆ‘‹‘˜XˆŠHYH
+Y™™XİÈ
+›Û
+Ú^™H
+H
+XÚÛ™\ÜÈŒLŠJJJBˆ
+YŒHˆÛYÚ\˜ÛH
+]
+H
+Ú^™HKK
+H
+^Y\œÈ‘‹İHˆ‘‹“X\ÚÈŠH
+™]H‘Ó‘ŠJBˆ
+Bˆ
+›Ûİš[‘[š\›ĞœšYÙN•\İÚ[ˆ
+^Y\ˆ‘‹İHŠH
+]ÎHŒŠBˆ
+›Ü\H”™Y™\™[˜ÙHˆ•Èˆ
+]L‹ˆ
+H
+^Y\ˆ‘‹”Ú[ÔÈŠH
+Y™™XİÈ
+›Û
+Ú^™H
+H
+XÚÛ™\ÜÈŒLÊJJJBˆ
+›Ü\H•˜[YHˆ”ÑHˆ
+]‹ˆ
+H
+^Y\ˆ‘‹‘˜XˆŠHYH
+Y™™XİÈ
+›Û
+Ú^™H
+H
+XÚÛ™\ÜÈŒLŠJJJBˆ
+YŒHˆÛYÚ\˜ÛH
+]
+H
+Ú^™HKK
+H
+^Y\œÈ‘‹İHˆ‘‹“X\ÚÈŠH
+™]È”ÑHŠJBˆ
+Bˆ
+›Ûİš[‘[š\›ĞœšYÙN•\İÚ[ˆ
+^Y\ˆ‘‹İHŠH
+]ÈŒŠBˆ
+›Ü\H”™Y™\™[˜ÙHˆ•ˆ
+]L‹ˆ
+H
+^Y\ˆ‘‹”Ú[ÔÈŠH
+Y™™XİÈ
+›Û
+Ú^™H
+H
+XÚÛ™\ÜÈŒLÊJJJBˆ
+›Ü\H•˜[YHˆ”ĞÓˆ
+]‹ˆ
+H
+^Y\ˆ‘‹‘˜XˆŠHYH
+Y™™XİÈ
+›Û
+Ú^™H
+H
+XÚÛ™\ÜÈŒLŠJJJBˆ
+YŒHˆÛYÚ\˜ÛH
+]
+H
+Ú^™HKK
+H
+^Y\œÈ‘‹İHˆ‘‹“X\ÚÈŠH
+™]”ĞÓŠJBˆ
+Bˆ
+›Ûİš[“[İ[[™ÒÛWÌ‹[[Hˆ
+^Y\ˆ‘‹İHŠH
+]Œ‹HŒ‹JBˆ
+›Ü\H”™Y™\™[˜ÙHˆ’Hˆ
+]‹
+H
+^Y\ˆ‘‹”Ú[ÔÈŠH
+Y™™XİÈ
+›Û
+Ú^™HÈÊH
+XÚÛ™\ÜÈŒLŠJJJBˆ
+YˆˆœİWÚÛHÚ\˜ÛH
+]
+H
+Ú^™H‹È‹ÊH
+š[‹ÊH
+^Y\œÈŠ‹İHˆŠ‹“X\ÚÈŠJBˆ
+Bˆ
+›Ûİš[“[İ[[™ÒÛWÌ‹[[Hˆ
+^Y\ˆ‘‹İHŠH
+]LKHŒ‹JBˆ
+›Ü\H”™Y™\™[˜ÙHˆ’ˆˆ
+]‹
+H
+^Y\ˆ‘‹”Ú[ÔÈŠH
+Y™™XİÈ
+›Û
+Ú^™HÈÊH
+XÚÛ™\ÜÈŒLŠJJJBˆ
+YˆˆœİWÚÛHÚ\˜ÛH
+]
+H
+Ú^™H‹È‹ÊH
+š[‹ÊH
+^Y\œÈŠ‹İHˆŠ‹“X\ÚÈŠJBˆ
+Bˆ
+›Ûİš[“[İ[[™ÒÛWÌ‹[[Hˆ
+^Y\ˆ‘‹İHŠH
+]Œ‹HËJBˆ
+›Ü\H”™Y™\™[˜ÙHˆ’Èˆ
+]‹
+H
+^Y\ˆ‘‹”Ú[ÔÈŠH
+Y™™XİÈ
+›Û
+Ú^™HÈÊH
+XÚÛ™\ÜÈŒLŠJJJBˆ
+YˆˆœİWÚÛHÚ\˜ÛH
+]
+H
+Ú^™H‹È‹ÊH
+š[‹ÊH
+^Y\œÈŠ‹İHˆŠ‹“X\ÚÈŠJBˆ
+Bˆ
+›Ûİš[“[İ[[™ÒÛWÌ‹[[Hˆ
+^Y\ˆ‘‹İHŠH
+]LKHËJBˆ
+›Ü\H”™Y™\™[˜ÙHˆ’ˆ
+]‹
+H
+^Y\ˆ‘‹”Ú[ÔÈŠH
+Y™™XİÈ
+›Û
+Ú^™HÈÊH
+XÚÛ™\ÜÈŒLŠJJJJBˆ
+YˆˆœİWÚÛHÚ\˜ÛH
+]
+H
+Ú^™H‹È‹ÊH
+š[‹ÊH
+^Y\œÈŠ‹İHˆŠ‹“X\ÚÈŠJBˆ
+Bˆ
+ÙYÛY[
+İ\ÎKÌÈÊH
+[™ÎKÌÈŒŠH
+ÚYŒJH
+^Y\ˆ‘‹İHŠH
+™]ÊJBˆ
+ÙYÛY[
+İ\ÎKÌÈŒŠH
+[™ÍÈŒŠH
+ÚYŒJH
+^Y\ˆ‘‹İHŠH
+™]ÊJBˆ
+ÙYÛY[
+İ\ÍÈŒŠH
+[™ÍÈÌ
+H
+ÚYŒJH
+^Y\ˆ‘‹İHŠH
+™]ÊJBˆ
+ÙYÛY[
+İ\ÍÈÌ
+H
+[™ÌÌ
+H
+ÚYŒJH
+^Y\ˆ‘‹İHŠH
+™]ÊJBˆ
+ÙYÛY[
+İ\ÌÌ
+H
+[™‹ŒÌKŒÌJH
+ÚYŒJH
+^Y\ˆ‘‹İHŠH
+™]ÊJBˆ
+ÙYÛY[
+İ\ÍÈÌ
+H
+[™ËŒÈÌ
+H
+ÚYŒJH
+^Y\ˆ‘‹İHŠH
+™]ÊJBˆ
+ÙYÛY[
+İ\ËŒÈÌ
+H
+[™ŒHÌKŒÌŒÔ¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ì¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€Ìà¸Ô€ÌÜ¸È¤€¡•¹€Ìà¸Ô€ÌÔ¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ì¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€Ìà¸Ô€ÌÔ¤€¡•¹€ÌĞ¸Ü€ÌÔ¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ì¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÌĞ¸Ü€ÌÔ¤€¡•¹€ÌĞ¸Ü€ÌÀ¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ì¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ĞÈ¸ÈÜ€ĞÌ¤€¡•¹€ĞÈ¸ÈÜ€ĞÀ¸à¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ğ¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ĞÈ¸ÈÜ€ĞÀ¸à¤€¡•¹€ĞÀ¸Ü€ĞÀ¸à¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ğ¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ĞÀ¸Ü€ĞÀ¸à¤€¡•¹€ĞÀ¸Ü€ÌÀ¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ğ¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ĞÀ¸Ü€ÌÀ¤€¡•¹€ÌÀ€ÌÀ¸à¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ğ¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÌÀ€ÌÀ¸à¤€¡•¹€ÈĞ¸ÀÈÔ€ÌÄ¸äÜÔ¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ğ¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ĞÀ¸Ü€ÌÀ¤€¡•¹€ĞĞ€ÌÀ¸à¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ğ¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ĞĞ€ÌÀ¸à¤€¡•¹€Ğà¸ÀÈÔ€ÌÄ¸äÜÔ¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ğ¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€Ìä¸Ô€ÌÜ¸È¤€¡•¹€Ìä¸Ô€ÌĞ¸Ô¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ğ¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€Ìä¸Ô€ÌĞ¸Ô¤€¡•¹€ĞÀ¸Ü€ÌĞ¸Ô¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ğ¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ĞÀ¸Ü€ÌĞ¸Ô¤€¡•¹€ĞÀ¸Ü€ÌÀ¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ğ¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÌĞ¸ÜÌ€ĞÌ¤€¡•¹€ÌĞ¸ÜÌ€ĞÄ¤€¡İ¥‘Ñ €À¸Ô¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€È¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÌĞ¸ÜÌ€ĞÄ¤€¡•¹€ÌØ¸ÌÔ€ĞÄ¤€¡İ¥‘Ñ €À¸Ô¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€È¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÌÜ¸ØÔ€ĞÄ¤€¡•¹€Ìä¸à€ĞÄ¤€¡İ¥‘Ñ €À¸Ô¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€È¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€Ìä¸à€ĞÄ¤€¡•¹€Ìä¸à€ÈÜ¤€¡İ¥‘Ñ €À¸Ô¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€È¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€Ìä¸à€ÈÜ¤€¡•¹€ĞÀ¸ØÔ€ÈÜ¤€¡İ¥‘Ñ €À¸Ô¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€È¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€Ìä¸à€ÈÜ¤€¡•¹€ÌĞ¸ØÔ€ÈÜ¤€¡İ¥‘Ñ €À¸Ô¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€È¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÌĞ¸ØÔ€ÈÜ¤€¡•¹€ÌÌ¸ÌÔ€ÈÜ¤€¡İ¥‘Ñ €À¸Ô¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€È¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÌĞ¸ØÔ€ÈÜ¤€¡•¹€Èä¸ØÔ€ÌÄ¤€¡İ¥‘Ñ €À¸Ô¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€È¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€Èä¸ØÔ€ÌÄ¤€¡•¹€ÈÔ¸äÜÔ€ÌÄ¸ÌÈÔ¤€¡İ¥‘Ñ €À¸Ô¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€È¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€Èä¸ØÔ€ÌÄ¤€¡•¹€ÈÔ¸äÜÔ€ÌÀ¸ÀÈÔ¤€¡İ¥‘Ñ €À¸Ô¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€È¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ĞÀ¸ØÔ€ÈÜ¤€¡•¹€ĞĞ¸ÌÔ€ÌÄ¤€¡İ¥‘Ñ €À¸Ô¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€È¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ĞĞ¸ÌÔ€ÌÄ¤€¡•¹€Ğä¸äÜÔ€ÌÄ¸ÌÈÔ¤€¡İ¥‘Ñ €À¸Ô¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€È¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ĞĞ¸ÌÔ€ÌÄ¤€¡•¹€Ğä¸äÜÔ€ÌÀ¸ÀÈÔ¤€¡İ¥‘Ñ €À¸Ô¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€È¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÌØ¸Ô€ÌÜ¸È¤€¡•¹€ÌØ¸Ô€ÌÔ¸Ô¤€¡İ¥‘Ñ €À¸Ô¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€È¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÌØ¸Ô€ÌÔ¸Ô¤€¡•¹€Ìä¸à€ÌÔ¸Ô¤€¡İ¥‘Ñ €À¸Ô¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€È¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÈÔ¸äÜÔ€ÌÀ¸ØÜÔ¤€¡•¹€ÈÜ€ÌÈ¸Ô¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ô¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÈÜ€ÌÈ¸Ô¤€¡•¹€ÈÔ€ÌÜ¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ô¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€Ğä¸äÜÔ€ÌÀ¸ØÜÔ¤€¡•¹€Ğà€ÌÈ¸Ô¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ø¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€Ğà€ÌÈ¸Ô¤€¡•¹€Ğä€ÌÜ¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ø¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÌĞ¸ØÔ€ÈÜ¤€¡•¹€ÌÌ¸Ì€Èä¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ü¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÌÌ¸Ì€Èä¤€¡•¹€ÌÌ¸Ì€ÌÀ¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ü¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ĞÀ¸ØÔ€ÈÜ¤€¡•¹€Ìä¸Ì€Èä¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€à¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€Ìä¸Ì€Èä¤€¡•¹€Ìä¸Ì€ÌÀ¤€¡İ¥‘Ñ €À¸ÈÔ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€à¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÌÔ¸Ô€ÌÜ¸È¤€¡•¹€ÌÔ¸Ô€ÌØ¤€¡İ¥‘Ñ €À¸Ğ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ä¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÌØ¸Ô€ÌÜ¸È¤€¡•¹€ÌØ¸Ô€ÌÔ¸Ô¤€¡İ¥‘Ñ €À¸Ô¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€È¤¤(€€¡Ù¥„€¡…Ğ€ÈÔ€ÌÈ¸Ü¤€¡Í¥é”€À¸Ø¤€¡‘É¥±°€À¸Ì¤€¡±…å•ÉÌ€‰¹Ôˆ€‰¹Ôˆ¤€¡¹•Ğ€Ä¤¤(€€¡Ù¥„€¡…Ğ€Èä¸ØÔ€ÌÄ¤€¡Í¥é”€À¸Ø¤€¡‘É¥±°€À¸Ì¤€¡±…å•ÉÌ€‰¹Ôˆ€‰¹Ôˆ¤€¡¹•Ğ€Ä¤¤(€€¡Ù¥„€¡…Ğ€Ğä€ÌÈ¸Ü¤€¡Í¥é”€À¸Ø¤€¡‘É¥±°€À¸Ì¤€¡±…å•ÉÌ€‰¹Ôˆ€‰¹Ôˆ¤€¡¹•Ğ€Ä¤¤(€€¡Ù¥„€¡…Ğ€ĞĞ¸ÌÔ€ÌÄ¤€¡Í¥é”€À¸Ø¤€¡‘É¥±°€À¸Ì¤€¡±…å•ÉÌ€‰¹Ôˆ€‰¹Ôˆ¤€¡¹•Ğ€Ä¤¤(€€¡Ù¥„€¡…Ğ€ÌÜ¸ØÔ€ĞÄ¤€¡Í¥é”€À¸Ø¤€¡‘É¥±°€À¸Ì¤€¡±…å•ÉÌ€‰¹Ôˆ€‰¹Ôˆ¤€¡¹•Ğ€Ä¤¤(€€¡Ù¥„€¡…Ğ€ÌÔ¸Ô€ÌØ¤€¡Í¥é”€À¸Ø¤€¡‘É¥±°€À¸Ì¤€¡±…å•ÉÌ€‰¹Ôˆ€‰¹Ôˆ¤€¡¹•Ğ€Ä¤¤(€€¡Ù¥„€¡…Ğ€ÌÈ¸Ää€ĞÌ¤€¡Í¥é”€À¸Ø¤€¡‘É¥±°€À¸Ì¤€¡±…å•ÉÌ€‰¹Ôˆ€‰¹Ôˆ¤€¡¹•Ğ€Ä¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÈĞ¸ÀÈÔ€ÌÀ¸ÀÈÔ¤€¡•¹€ÈÔ€ÌÈ¸Ü¤€¡İ¥‘Ñ €À¸Ğ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ä¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÈÔ¸äÜÔ€ÌÄ¸äÜÔ¤€¡•¹€ÈÔ€ÌÈ¸Ü¤€¡İ¥‘Ñ €À¸Ğ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ä¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€Èà¸ÌÔ€ÌÄ¤€¡•¹€Èä¸ØÔ€ÌÄ¤€¡İ¥‘Ñ €À¸Ğ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ä¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€Ğà¸ÀÈÔ€ÌÀ¸ÀÈÔ¤€¡•¹€Ğä€ÌÈ¸Ü¤€¡İ¥‘Ñ €À¸Ğ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ä¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€Ğä¸äÜÔ€ÌÄ¸äÜÔ¤€¡•¹€Ğä€ÌÈ¸Ü¤€¡İ¥‘Ñ €À¸Ğ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ä¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ĞÔ¸ØÔ€ÌÄ¤€¡•¹€ĞĞ¸ÌÔ€ÌÄ¤€¡İ¥‘Ñ €À¸Ğ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ä¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€Ìà¸ÌÔ€ĞÄ¤€¡•¹€ÌÜ¸ØÔ€ĞÄ¤€¡İ¥‘Ñ €À¸Ğ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ä¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÌÔ¸Ô€ÌÜ¸È¤€¡•¹€ÌÔ¸Ô€ÌØ¤€¡İ¥‘Ñ €À¸Ğ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ä¤¤(€€¡Í•µ•¹Ğ€¡ÍÑ…ÉĞ€ÌÈ¸Ää€ĞÌ¤€¡•¹€ÌÈ¸Ää€ĞÌ¤€¡İ¥‘Ñ €À¸Ğ¤€¡±…å•È€‰¹Ôˆ¤€¡¹•Ğ€Ä¤¤(€€¡é½¹”€¡¹•Ğ€Ä¤€¡¹•Ñ}¹…µ”€‰9ˆ¤€¡±…å•È€‰¹Ôˆ¤€¡¡…Ñ •‘”€À¸Ô¤(€€€€¡½¹¹•Ñ}Á…‘Ì€¡±•…É…¹”€À¸ÈÔ¤¤(€€€€¡µ¥¹}Ñ¡¥­¹•ÍÌ€À¸ÈÔ¤(€€€€¡™¥±°å•Ì€¡Ñ¡•Éµ…±}…À€À¸Ì¤€¡Ñ¡•Éµ…±}‰É¥‘•}İ¥‘Ñ €À¸Ì¤¤(€€€€¡Á½±å½¸(€€€€€€¡ÁÑÌ(€€€€€€€€¡áä€ÈÀ¸Ô€ÈÀ¸Ô¤(€€€€€€€€¡áä€ÔÌ¸Ô€ÈÀ¸Ô¤(€€€€€€€€¡áä€ÔÌ¸Ô€ĞÔ¸Ô¤(€€€€€€€€¡áä€ÈÀ¸Ô€ĞÔ¸Ô¤(€€€€€€¤(€€€€¤(€€¤(¤
