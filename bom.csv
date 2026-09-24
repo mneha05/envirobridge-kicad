@@ -1,0 +1,11 @@
+Reference,Qty,Value,Description,Footprint
+"U1,U2",2,BME280,Bosch temp/humidity/pressure sensor,Custom BME280 LGA-8 2.5x2.5 mm
+"C1,C2",2,100nF,local decoupling capacitor,0402
+C3,1,4.7uF,input bulk capacitor,0603/0805
+"R1,R2",2,4.7k,I2C pull-up,0402
+"SJ1,SJ2",2,ADDR,3-pad address select jumper,custom 3-pad
+"SJ3,SJ4",2,PU_EN,pull-up enable jumper,custom 2-pad
+J1,1,1x4 2.54mm,bench/debug header,TH 1x4
+J2,1,JST-SH-4,Qwiic-style connector,SMD 1.0mm pitch
+TP1-TP4,4,TEST,power/bus test point,1.5mm SMD pad
+H1-H4,4,M2.5,mounting hole,2.7mm NPTH
