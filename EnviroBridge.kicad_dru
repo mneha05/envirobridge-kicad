@@ -1,0 +1,8 @@
+(version 1)
+(rule "I2C / low-speed minimum clearance"
+  (constraint clearance (min 0.20mm)))
+(rule "Minimum track width"
+  (constraint track_width (min 0.20mm)))
+(rule "Minimum via"
+  (constraint via_diameter (min 0.60mm))
+  (constraint hole_size (min 0.30mm)))
