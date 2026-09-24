@@ -1,0 +1,207 @@
+EESchema Schematic File Version 4
+LIBS:power
+LIBS:device
+LIBS:connector_generic
+LIBS:sensor
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+Sheet 1 1
+Title "EnviroBridge - Dual BME280 Sensor Daughterboard"
+Date "2026-09-23"
+Rev "1.0"
+Comp "Neha Mahesh"
+Comment1 "Dual-address I2C environmental sensor breakout"
+Comment2 "3.3V only"
+$EndDescr
+$Comp
+L Sensor:BME280 U1
+U 1 1 1
+P 4200 3100
+F 0 "U1" H 3750 3550 50  0000 L CNN
+F 1 "BME280" H 3750 3450 50  0000 L CNN
+F 2 "Package_LGA:LGA-8_2.5x2.5mm_P0.65mm" H 5650 2650 50  0001 C CNN
+F 3 "" H 4200 2900 50  0001 C CNN
+	1    4200 3100
+	1 0 0 -1
+$EndComp
+$Comp
+L Sensor:BME280 U2
+U 1 1 2
+P 6900 3100
+F 0 "U2" H 6450 3550 50  0000 L CNN
+F 1 "BME280" H 6450 3450 50  0000 L CNN
+F 2 "Package_LGA:LGA-8_2.5x2.5mm_P0.65mm" H 8350 2650 50  0001 C CNN
+F 3 "" H 6900 2900 50  0001 C CNN
+	1    6900 3100
+	1 0 0 -1
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 3
+P 5450 5050
+F 0 "J1" V 5414 4762 50  0000 R CNN
+F 1 "HOST" V 5323 4762 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5450 5050 50  0001 C CNN
+	1    5450 5050
+	0 -1 -1 0
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 4
+P 5200 2200
+F 0 "R1" H 5270 2246 50 0000 L CNN
+F 1 "4.7k" H 5270 2155 50 0000 L CNN
+	1    5200 2200
+	1 0 0 -1
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5
+P 5700 2200
+F 0 "R2" H 5770 2246 50 0000 L CNN
+F 1 "4.7k" H 5770 2155 50 0000 L CNN
+	1    5700 2200
+	1 0 0 -1
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 6
+P 3500 3350
+F 0 "C1" H 3615 3396 50 0000 L CNN
+F 1 "100n" H 3615 3305 50 0000 L CNN
+	1    3500 3350
+	1 0 0 -1
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 7
+P 7600 3350
+F 0 "C2" H 7715 3396 50 0000 L CNN
+F 1 "100n" H 7715 3305 50 0000 L CNN
+	1    7600 3350
+	1 0 0 -1
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 8
+P 5900 4400
+F 0 "C3" H 6015 4446 50 0000 L CNN
+F 1 "4.7u" H 6015 4355 50 0000 L CNN
+	1    5900 4400
+	1 0 0 -1
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 9
+P 5450 1750
+F 0 "#PWR01" H 5450 1600 50 0001 C CNN
+F 1 "+3.3V" H 5465 1923 50 0000 C CNN
+	1    5450 1750
+	1 0 0 -1
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 10
+P 5450 3900
+F 0 "#PWR02" H 5450 3650 50 0001 C CNN
+F 1 "GND" H 5455 3727 50 0000 C CNN
+	1    5450 3900
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	5450 1750 5450 1950
+Wire Wire Line
+	5200 1950 5700 1950
+Wire Wire Line
+	5200 1950 5200 2050
+Wire Wire Line
+	5700 1950 5700 2050
+Text Label 5000 2600 0 50 ~ 0
+SDA
+Text Label 5800 2600 0 50 ~ 0
+SCL
+Wire Wire Line
+	5200 2350 5200 2600
+Wire Wire Line
+	5700 2350 5700 2600
+Wire Wire Line
+	3900 3000 3600 3000
+Text Label 3600 3000 0 50 ~ 0
+SDA
+Wire Wire Line
+	3900 3100 3600 3100
+Text Label 3600 3100 0 50 ~ 0
+SCL
+Wire Wire Line
+	6600 3000 6300 3000
+Text Label 6300 3000 0 50 ~ 0
+SDA
+Wire Wire Line
+	6600 3100 6300 3100
+Text Label 6300 3100 0 50 ~ 0
+SCL
+Wire Wire Line
+	4200 2700 4200 2450
+Wire Wire Line
+	6900 2700 6900 2450
+Wire Wire Line
+	4200 2450 6900 2450
+Wire Wire Line
+	5450 1950 5450 2450
+Connection ~ 5450 1950
+Connection ~ 5450 2450
+Wire Wire Line
+	4200 3500 4200 3700
+Wire Wire Line
+	6900 3500 6900 3700
+Wire Wire Line
+	4200 3700 6900 3700
+Wire Wire Line
+	5450 3700 5450 3900
+Connection ~ 5450 3700
+Wire Wire Line
+	3500 3200 3500 2450
+Wire Wire Line
+	3500 2450 4200 2450
+Connection ~ 4200 2450
+Wire Wire Line
+	3500 3500 3500 3700
+Wire Wire Line
+	3500 3700 4200 3700
+Connection ~ 4200 3700
+Wire Wire Line
+	7600 3200 7600 2450
+Wire Wire Line
+	7600 2450 6900 2450
+Connection ~ 6900 2450
+Wire Wire Line
+	7600 3500 7600 3700
+Wire Wire Line
+	7600 3700 6900 3700
+Connection ~ 6900 3700
+Wire Wire Line
+	5900 4250 5900 4000
+Wire Wire Line
+	5900 4000 5450 4000
+Wire Wire Line
+	5450 4000 5450 3700
+Wire Wire Line
+	5900 4550 5900 4750
+Wire Wire Line
+	5900 4750 5350 4750
+Wire Wire Line
+	5350 4750 5350 5250
+Text Label 5550 4750 0 50 ~ 0
+3V3
+Text Label 5650 4750 0 50 ~ 0
+SDA
+Text Label 5750 4750 0 50 ~ 0
+SCL
+Text Notes 3725 3950 0 50 ~ 0
+U1 SDO strap -> GND (0x76)
+Text Notes 6425 3950 0 50 ~ 0
+U2 SDO strap -> 3V3 (0x77)
+Text Notes 4850 5500 0 50 ~ 0
+J1: GND / 3V3 / SDA / SCL
+$EndSCHEMATC
